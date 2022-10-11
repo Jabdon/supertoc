@@ -1,0 +1,97 @@
+
+.middle-card{
+    background-color:white;
+    width: 600px;
+    height: 500px;
+    border-radius: 8px;
+
+}
+
+#cont{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 700px;
+}
+
+.body {
+    background-color: #CCD1CC;
+}
+
+.title-section{
+    padding-top: 30px;
+    text-align: center;
+    height: 20%;
+}
+
+.pname{
+width: 100%;
+margin-top: 20px;
+text-align: center;
+height: 40px;
+
+}
+
+.players-name{
+    width: 300px;
+}
+
+.players-name-container{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.input-form{
+    justify-content: center;
+    text-align: center;
+    height: 80%;
+
+}
+
+#next-button{
+    width: 300px;
+    background-color: #78EAB3;
+    color: white;
+    height: 50px;
+    margin-top: 100px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+
+}
+.button-text{
+    align-self: center;
+    width: 50%;
+  
+}
+
+.button-border-style{
+    border: 1px solid #b7b7b7;
+    border-radius: 8px;
+}
+
+.button-icon{
+    height: 50%;
+    align-self: center;
+}
+
+.mid-card-title{
+}
+
+.button-space-allocator{
+    width: 25%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+.mid-card-subtitle{
+font-weight: lighter;
+color: #BCBABA;
+}
+
+.button-container{
+    display: flex;
+    justify-content: center;
+}
+
