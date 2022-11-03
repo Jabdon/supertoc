@@ -50,14 +50,34 @@ height: 40px;
 }
 
 #next-button{
+    transition: all .5s ease;
     width: 300px;
-    background-color: #78EAB3;
-    color: white;
+    background-color: white;
+    color: #78EAB3;
     height: 50px;
     margin-top: 100px;
     display: flex;
     text-align: center;
     justify-content: center;
+    border-color: #78EAB3;
+    border-width: 2px;
+}
+.button-icon {
+    transition: all .5s ease;
+    height: 50%;
+    width: 50%;
+    background-image: url(/images/right-arrow.svg);
+    background-repeat: no-repeat;
+    align-self: center;
+    filter: invert(81%) sepia(25%) saturate(639%) hue-rotate(95deg) brightness(98%) contrast(80%);
+}
+#next-button:hover {
+    background-color:#78EAB3;
+    color: white;
+
+}
+#next-button:hover .button-icon {
+    filter: invert(99%) sepia(6%) saturate(29%) hue-rotate(266deg) brightness(107%) contrast(100%);
 
 }
 .button-text{
@@ -69,11 +89,6 @@ height: 40px;
 .button-border-style{
     border: 1px solid #b7b7b7;
     border-radius: 8px;
-}
-
-.button-icon{
-    height: 50%;
-    align-self: center;
 }
 
 .mid-card-title{
