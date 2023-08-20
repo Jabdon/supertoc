@@ -19,13 +19,17 @@
           <div class="input-form">
             <div class="players-name-container">
               <div class="players-name">
-                <input type="text" class="pname button-border-style" id="pname1" placeholder="Player 1">
-                <input type="text" class="pname button-border-style" id="pname2" placeholder="Player 2">
+                <input type="radio" id="option1" name="age" value="30">
+                <label class="radio-label" for="option1">10 x 10</label><br>
+                <input type="radio" id="option2" name="age" value="60">
+                <label class="radio-label" for="option2">20 x 20</label><br>  
+                <input type="radio" id="option3" name="age" value="100">
+                <label class="radio-label" for="option3">30 x 30</label><br>
               </div>
             </div>
 
             <div class="button-container">
-              <button type="submit" class ="button-border-style"  id="next-button" value="Next" onclick="nextButton()">
+              <button type="submit" class ="button-border-style"  id="next-button" value="Next" onclick="goToSelectSizeView()">
                 <div class="button-space-allocator"></div>
                 <span class="button-text">NEXT</span>
                 <div class="button-space-allocator">
