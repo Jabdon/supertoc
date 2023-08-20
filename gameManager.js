@@ -1,11 +1,12 @@
 
 var player1, player2;
+var pickedSize = 10;
 var isInPlayerNameScreen = true;
-const radioButtons = `<input type="radio" id="option1" name="age" value="10">
+const radioButtons = `<input type="radio" id="option1" name="size" value="10" checked>
 <label class="radio-label" for="option1">10 x 10</label><br>
-<input type="radio" id="option2" name="age" value="20">
+<input type="radio" id="option2" name="size" value="20">
 <label class="radio-label" for="option2">20 x 20</label><br>  
-<input type="radio" id="option3" name="age" value="30">
+<input type="radio" id="option3" name="size" value="30">
 <label class="radio-label" for="option3">30 x 30</label><br>`;
 
 function validatingPlayerNames(){
@@ -19,6 +20,22 @@ function validatingPlayerNames(){
         isValidated = false ;
     }
     return isValidated;
+}
+
+function validatingBoardSize(){
+    var radioButtons = document.getElementsByName("size");
+    var isValidated = false;
+    for(i = 0; i < radioButtons.length; i++){
+        if(radioButtons[i].checked){
+            isValidated = true
+            pickedSize = radioButtons[i].value ;
+        }
+    }
+    // throw error if none is selected
+    if (!isValidated){
+        window.alert("No board size was selected!")
+    }
+    return isValidated;
 
 }
 
@@ -26,15 +43,18 @@ function nextButton(){
     if(isInPlayerNameScreen){
         if (validatingPlayerNames()) {
             // store info to local storage
-
             // go to 
             goToSelectSizeView()
-            
-        }
+        }  
+    }
     else{
-        // go to board
-    }    
-
+        // try to go to board
+        if(validatingBoardSize()){
+            // store info to local storage
+            
+            //go to board
+            goToBoardView()
+        }
     }
     
 
@@ -59,5 +79,10 @@ function goToSelectSizeView(){
 
     // 
     isInPlayerNameScreen = false;
+
+}
+
+function goToBoardView(){
+    // save name and board size to local storage then take user to board screen
 
 }
