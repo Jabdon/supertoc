@@ -91,7 +91,10 @@ height: 40px;
     border-radius: 8px;
 }
 
-.mid-card-title{
+.back-link{
+    margin-top: 20px;
+    color: #C16060;
+    display: none;
 }
 
 .button-space-allocator{
@@ -100,7 +103,7 @@ height: 40px;
     display: flex;
     justify-content: center;
 }
-.mid-card-subtitle{
+#mid-card-subtitle{
 font-weight: lighter;
 color: #BCBABA;
 }
@@ -108,5 +111,12 @@ color: #BCBABA;
 .button-container{
     display: flex;
     justify-content: center;
+}
+.radio-label{
+    height: 40px;
+    width: 100px;
+    font-weight: lighter;
+    word-spacing: 20px;
+    margin-left: 20px;
 }
 
