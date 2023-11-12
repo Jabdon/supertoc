@@ -2,7 +2,7 @@
 .middle-card{
     background-color:white;
     min-width: 800px;
-    height: 900px;
+    height: 1000px;
     border-radius: 8px;
 
 }
@@ -14,7 +14,7 @@
 }
 
 .body {
-    background-color: whitesmoke;
+    background-color: white;
 }
 
 :root {
@@ -27,11 +27,13 @@
     /*gap: 0.2em;*/
     grid-template-rows: repeat(var(--grid-rows), 1fr);
     grid-template-columns: repeat(var(--grid-cols), 1fr);
+    border: 0.5px solid black;
   }
   
   .grid-item {
+    background-color: inherit;
     padding: 1em;
-    border: 1px solid black;
+    border: 0.5px solid black;
     text-align: center;
   }
   .player-scoreboard{
@@ -49,6 +51,7 @@
   .top-board{
     display: inline-flex;
     align-items: center;
+    justify-content: flex-end;
   }
 
   .bubble-score{
@@ -60,5 +63,9 @@
     border-radius: 50px;
     background-color:rgba(46, 245, 126, .15);
     color:#78EAB3;
+  }
+
+  .to-the-right{
+    float: right;
   }
 
