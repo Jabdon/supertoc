@@ -86,3 +86,18 @@ function goToBoardView(){
     // save name and board size to local storage then take user to board screen
 
 }
+function makeRows(rows, cols) {
+    const container = document.getElementById("table");
+    container.style.setProperty('--grid-rows', rows);
+    container.style.setProperty('--grid-cols', cols);
+    for (c = 0; c < (rows * cols); c++) {
+      let cell = document.createElement("button");
+      cell.style.width = `${800/rows}px`
+      cell.style.height = `${800/rows}px`
+      cell.setAttribute('id', `button${c}`)
+      //cell.innerText = (c + 1);
+      container.appendChild(cell).className = "grid-item";
+    };
+  };
+
+ // Window.onload = makeRows(10, 10);
